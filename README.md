@@ -5,18 +5,18 @@ This project represents an end-to-end Python system that simulates API telemetry
 ```
 api-telemetry-feature-store/
 │
-├── .venv/                  <-- Virtual environment
+├── .venv/                  
 ├── data/                   <-- Raw log storage & Parquet files
 │
 ├── src/                    <-- Core Python source modules
 │   ├── __init__.py         <-- Package initializer
-│   ├── generator.py        <-- Step 1: Telemetry log generator
-│   ├── ingestion.py        <-- Step 2: Columnar storage ingestion (Parquet)
-│   ├── features.py         <-- Step 3: Feature Store & SQL aggregates (DuckDB)
-│   └── anomaly.py          <-- Step 4: ML Anomaly Detection (Isolation Forest)
+│   ├── generator.py        <-- Telemetry log generator
+│   ├── ingestion.py        <-- Columnar storage ingestion (Parquet)
+│   ├── features.py         <-- Feature Store & SQL aggregates (DuckDB)
+│   └── anomaly.py          <-- ML Anomaly Detection (Isolation Forest)
 │
-├── app.py                  <-- Step 5: Streamlit monitoring dashboard
+├── app.py                  <-- Streamlit monitoring dashboard
 ├── .gitignore              <-- Git ignore rules
 ├── README.md               <-- Project documentation
 └── requirements.txt        <-- Python dependencies
-```s
+```
